@@ -1,0 +1,14 @@
+
+# ============ SCREEN SHAKE CONFIGURATION ============
+SCREEN_SHAKE_ENABLED = True
+SCREEN_SHAKE_INTENSITY = 5  # pixels (change this to adjust shake strength)
+SCREEN_SHAKE_DURATION = 0.2  # seconds (how long the shake lasts)
+# ====================================================
+
+# Screen shake variables
+screen_shake_timer = 0.0
+screen_shake_offset_x = 0
+screen_shake_offset_y = 0
+
+# Create a temporary surface for rendering (used for screen shake effect)
+temp_surface = pygame.Surface((WIDTH, HEIGHT))
